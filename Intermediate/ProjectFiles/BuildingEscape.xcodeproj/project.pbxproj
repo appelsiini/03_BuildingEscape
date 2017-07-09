@@ -18,8 +18,10 @@
 		C1FE66727A0B20E783E120EF /* BuildingEscape.h in Sources */ = {isa = PBXBuildFile; fileRef = 5D191940012AF084ACFC3766 /* BuildingEscape.h */; };
 		7942B691336E7F8D670121A7 /* BuildingEscapeGameModeBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DDFD24638DFD37E0EF1860E9 /* BuildingEscapeGameModeBase.cpp */; };
 		804C15D8FF55CAC4C600F837 /* BuildingEscapeGameModeBase.h in Sources */ = {isa = PBXBuildFile; fileRef = 558EB3156192875CF8726303 /* BuildingEscapeGameModeBase.h */; };
-		068CF7AFC5567760E1CD11E7 /* PositionReport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58A68E11365CE0DD04EC0EFE /* PositionReport.cpp */; };
-		49227E5C9104F10EE911D272 /* PositionReport.h in Sources */ = {isa = PBXBuildFile; fileRef = 5E1AFF70899755877DCCBCBB /* PositionReport.h */; };
+		068CF7AFC5567760E1CD11E7 /* OpenDoor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58A68E11365CE0DD04EC0EFE /* OpenDoor.cpp */; };
+		49227E5C9104F10EE911D272 /* OpenDoor.h in Sources */ = {isa = PBXBuildFile; fileRef = 5E1AFF70899755877DCCBCBB /* OpenDoor.h */; };
+		0475259B9185FF197DF865A2 /* PositionReport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D81ACFDDDC02FD47D31BB31C /* PositionReport.cpp */; };
+		5D70536C9687817D66C2581C /* PositionReport.h in Sources */ = {isa = PBXBuildFile; fileRef = DE557C6312B9F465B55D976E /* PositionReport.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,57 +36,60 @@
 		5D191940012AF084ACFC3766 /* BuildingEscape.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; name = "BuildingEscape.h"; path = "../../Source/BuildingEscape/BuildingEscape.h"; sourceTree = SOURCE_ROOT; };
 		DDFD24638DFD37E0EF1860E9 /* BuildingEscapeGameModeBase.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = "BuildingEscapeGameModeBase.cpp"; path = "../../Source/BuildingEscape/BuildingEscapeGameModeBase.cpp"; sourceTree = SOURCE_ROOT; };
 		558EB3156192875CF8726303 /* BuildingEscapeGameModeBase.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; name = "BuildingEscapeGameModeBase.h"; path = "../../Source/BuildingEscape/BuildingEscapeGameModeBase.h"; sourceTree = SOURCE_ROOT; };
-		58A68E11365CE0DD04EC0EFE /* PositionReport.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = "PositionReport.cpp"; path = "../../Source/BuildingEscape/PositionReport.cpp"; sourceTree = SOURCE_ROOT; };
-		5E1AFF70899755877DCCBCBB /* PositionReport.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; name = "PositionReport.h"; path = "../../Source/BuildingEscape/PositionReport.h"; sourceTree = SOURCE_ROOT; };
-		DF53A3671784F04BF55B7688 /* BuildingEscape */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = BuildingEscape; sourceTree = BUILT_PRODUCTS_DIR; };
+		58A68E11365CE0DD04EC0EFE /* OpenDoor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = "OpenDoor.cpp"; path = "../../Source/BuildingEscape/OpenDoor.cpp"; sourceTree = SOURCE_ROOT; };
+		5E1AFF70899755877DCCBCBB /* OpenDoor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; name = "OpenDoor.h"; path = "../../Source/BuildingEscape/OpenDoor.h"; sourceTree = SOURCE_ROOT; };
+		D81ACFDDDC02FD47D31BB31C /* PositionReport.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = "PositionReport.cpp"; path = "../../Source/BuildingEscape/PositionReport.cpp"; sourceTree = SOURCE_ROOT; };
+		DE557C6312B9F465B55D976E /* PositionReport.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; name = "PositionReport.h"; path = "../../Source/BuildingEscape/PositionReport.h"; sourceTree = SOURCE_ROOT; };
+		6A484D7842E36CB748486777 /* BuildingEscape */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = BuildingEscape; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6A42E70BF157290DFAA0E7B0 = {
+		C69E0FE10C0AD0E6EA29D166 = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7E4278E2A5446F9E6FADE4BB /* BuildingEscape.cpp in Sources */,
 				7942B691336E7F8D670121A7 /* BuildingEscapeGameModeBase.cpp in Sources */,
-				068CF7AFC5567760E1CD11E7 /* PositionReport.cpp in Sources */,
+				068CF7AFC5567760E1CD11E7 /* OpenDoor.cpp in Sources */,
+				0475259B9185FF197DF865A2 /* PositionReport.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXContainerItemProxy section */
-		287B78B7F621E25C6B7C913B /* PBXContainerItemProxy */ = {
+		5C16FBE535A459CD04EF5133 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = AE3FD147C9388D81E0433DF8 /* Project object */;
+			containerPortal = 6A42E70BF157290DFAA0E7B0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 66C2B69A0EF33AAECE280A5A;
+			remoteGlobalIDString = AE3FD147C9388D81E0433DF8;
 			remoteInfo = "BuildingEscape_Build";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXTargetDependency section */
-		BB8C20C2C6007E126A25EF4E /* PBXTargetDependency */ = {
+		FF9FD5B079AE913EFBE4E273 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 66C2B69A0EF33AAECE280A5A /* BuildingEscape_Build */;
-			targetProxy = 287B78B7F621E25C6B7C913B /* PBXContainerItemProxy */;
+			target = AE3FD147C9388D81E0433DF8 /* BuildingEscape_Build */;
+			targetProxy = 5C16FBE535A459CD04EF5133 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXGroup section */
-		6019FC17772B2A14AE8336F5 = {
+		398BAD7E4E1D260A990EAD35 = {
 			isa = PBXGroup;
 			children = (
-				8709686EA06D030E41A3C941 /* Source */,
-				27092877EFE937E2A42A7598 /* Config */,
+				AE50AEC8B950205D93CFE7A8 /* Source */,
+				9BB753D02B5DD9B1290DA475 /* Config */,
 				10E4841AB4578BB4EF66F8B7 /* BuildingEscape.uproject */,
-				D21103CB62D053270A557FED /* Products */,
+				431F22565929FB31295390EC /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8709686EA06D030E41A3C941 = {
+		AE50AEC8B950205D93CFE7A8 = {
 			isa = PBXGroup;
 			children = (
-				86F8D14BBB71786C6776E01A /* BuildingEscape */,
+				9DFD7F67ABC77B2E4D159D6A /* BuildingEscape */,
 				940AC694D607EE88F16DFF10 /* BuildingEscape.Target.cs */,
 				6EF1EB4E659A8BF798C986A9 /* BuildingEscapeEditor.Target.cs */,
 			);
@@ -92,7 +97,7 @@
 			path = "Source";
 			sourceTree = "<group>";
 		};
-		86F8D14BBB71786C6776E01A = {
+		9DFD7F67ABC77B2E4D159D6A = {
 			isa = PBXGroup;
 			children = (
 				3291B7F8768100B92BC18582 /* BuildingEscape.Build.cs */,
@@ -100,14 +105,16 @@
 				5D191940012AF084ACFC3766 /* BuildingEscape.h */,
 				DDFD24638DFD37E0EF1860E9 /* BuildingEscapeGameModeBase.cpp */,
 				558EB3156192875CF8726303 /* BuildingEscapeGameModeBase.h */,
-				58A68E11365CE0DD04EC0EFE /* PositionReport.cpp */,
-				5E1AFF70899755877DCCBCBB /* PositionReport.h */,
+				58A68E11365CE0DD04EC0EFE /* OpenDoor.cpp */,
+				5E1AFF70899755877DCCBCBB /* OpenDoor.h */,
+				D81ACFDDDC02FD47D31BB31C /* PositionReport.cpp */,
+				DE557C6312B9F465B55D976E /* PositionReport.h */,
 			);
 			name = "BuildingEscape";
 			path = "Source/BuildingEscape";
 			sourceTree = "<group>";
 		};
-		27092877EFE937E2A42A7598 = {
+		9BB753D02B5DD9B1290DA475 = {
 			isa = PBXGroup;
 			children = (
 				9F1A6E3CBDFC1C4D72A426E5 /* DefaultEditor.ini */,
@@ -118,10 +125,10 @@
 			path = "Config";
 			sourceTree = "<group>";
 		};
-		D21103CB62D053270A557FED /* Products */ = {
+		431F22565929FB31295390EC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DF53A3671784F04BF55B7688 /* BuildingEscape */,
+				6A484D7842E36CB748486777 /* BuildingEscape */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,10 +136,10 @@
 /* End PBXGroup section */
 
 /* Begin PBXLegacyTarget section */
-		66C2B69A0EF33AAECE280A5A /* BuildingEscape_Build */ = {
+		AE3FD147C9388D81E0433DF8 /* BuildingEscape_Build */ = {
 			isa = PBXLegacyTarget;
-			buildArgumentsString = "$(ACTION) $(UE_BUILD_TARGET_NAME) $(PLATFORM_NAME) $(UE_BUILD_TARGET_CONFIG) \"/Users/anamus/Projects/cpp/UnrealCourse/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject\"";
-			buildConfigurationList = FF9FD5B079AE913EFBE4E273 /* Build configuration list for PBXLegacyTarget "BuildingEscape_Build" */;
+			buildArgumentsString = "$(ACTION) $(UE_BUILD_TARGET_NAME) $(PLATFORM_NAME) $(UE_BUILD_TARGET_CONFIG) \"/Users/anamus/Projects/UnrealEngine/BuildingEscape/BuildingEscape.uproject\"";
+			buildConfigurationList = F854792ACF3D560F4EA14531 /* Build configuration list for PBXLegacyTarget "BuildingEscape_Build" */;
 			buildPhases = (
 			);
 			buildToolPath = "/Users/anamus/EpicGames/UE_4.16/Engine/Build/BatchFiles/Mac/Build.sh";
@@ -146,28 +153,28 @@
 /* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
-		A70058321586847C9B8D06A4 /* BuildingEscape */ = {
+		DF53A3671784F04BF55B7688 /* BuildingEscape */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D3BE7732D67756CCD25C0AFD /* Build configuration list for PBXNativeTarget "BuildingEscape" */;
+			buildConfigurationList = 66C2B69A0EF33AAECE280A5A /* Build configuration list for PBXNativeTarget "BuildingEscape" */;
 			buildPhases = (
 			);
 			dependencies = (
-				BB8C20C2C6007E126A25EF4E /* PBXTargetDependency */,
+				FF9FD5B079AE913EFBE4E273 /* PBXTargetDependency */,
 			);
 			name = "BuildingEscape";
 			passBuildSettingsInEnvironment = 1;
 			productName = "BuildingEscape";
-			productReference = "DF53A3671784F04BF55B7688";
+			productReference = "6A484D7842E36CB748486777";
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXNativeTarget section */
-		5C16FBE535A459CD04EF5133 /* BuildingEscape_Index */ = {
+		6019FC17772B2A14AE8336F5 /* BuildingEscape_Index */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6A484D7842E36CB748486777 /* Build configuration list for PBXNativeTarget "BuildingEscape_Index" */;
+			buildConfigurationList = D21103CB62D053270A557FED /* Build configuration list for PBXNativeTarget "BuildingEscape_Index" */;
 			buildPhases = (
-				6A42E70BF157290DFAA0E7B0 /* Sources */,
+				C69E0FE10C0AD0E6EA29D166 /* Sources */,
 			);
 			dependencies = (
 			);
@@ -179,38 +186,38 @@
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AE3FD147C9388D81E0433DF8 /* Project object */ = {
+		6A42E70BF157290DFAA0E7B0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Epic Games, Inc.";
 				TargetAttributes = {
-					A70058321586847C9B8D06A4 = {
+					DF53A3671784F04BF55B7688 = {
 						ProvisioningStyle = Manual;
 					};
 				};
 			};
-			buildConfigurationList = F854792ACF3D560F4EA14531 /* Build configuration list for PBXProject "BuildingEscape" */;
+			buildConfigurationList = 3B7509B5182949751D8358BE /* Build configuration list for PBXProject "BuildingEscape" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en
 			);
-			mainGroup = 6019FC17772B2A14AE8336F5;
-			productRefGroup = D21103CB62D053270A557FED;
+			mainGroup = 398BAD7E4E1D260A990EAD35;
+			productRefGroup = 431F22565929FB31295390EC;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-			A70058321586847C9B8D06A4 /* BuildingEscape */,
-			66C2B69A0EF33AAECE280A5A /* BuildingEscape_Build */,
-			5C16FBE535A459CD04EF5133 /* BuildingEscape_Index */,
+			DF53A3671784F04BF55B7688 /* BuildingEscape */,
+			AE3FD147C9388D81E0433DF8 /* BuildingEscape_Build */,
+			6019FC17772B2A14AE8336F5 /* BuildingEscape_Index */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin XCBuildConfiguration section */
-		3B7509B5182949751D8358BE /* "DebugGame" */ = {
+		AAABBEDC7ADD162CC7D371F8 /* "DebugGame" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -669,7 +676,7 @@
 			};
 			name = "DebugGame";
 		};
-		AAABBEDC7ADD162CC7D371F8 /* "DebugGame Editor" */ = {
+		EEDC5DC394EA6CE9F40ECD36 /* "DebugGame Editor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1128,7 +1135,7 @@
 			};
 			name = "DebugGame Editor";
 		};
-		EEDC5DC394EA6CE9F40ECD36 /* "Development" */ = {
+		74246BD66C8ED38153F4524C /* "Development" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1587,7 +1594,7 @@
 			};
 			name = "Development";
 		};
-		74246BD66C8ED38153F4524C /* "Development Editor" */ = {
+		7489CF7CB472CFE78E6B0525 /* "Development Editor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2046,7 +2053,7 @@
 			};
 			name = "Development Editor";
 		};
-		7489CF7CB472CFE78E6B0525 /* "Shipping" */ = {
+		51E699D2C6D7C79DB1F033C5 /* "Shipping" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2505,7 +2512,7 @@
 			};
 			name = "Shipping";
 		};
-		398BAD7E4E1D260A990EAD35 /* "DebugGame" */ = {
+		07F21BF3882694E6FAC0B7AF /* "DebugGame" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
@@ -2516,14 +2523,14 @@
 				"TARGETED_DEVICE_FAMILY[sdk=iphoneos*]" = "1,2";
 				"SDKROOT[sdk=iphoneos]" = iphoneos;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CONFIGURATION_BUILD_DIR[sdk=macosx*]" = "/Users/anamus/Projects/cpp/UnrealCourse/03_BuildingEscape/BuildingEscape/Binaries/Mac";
+				"CONFIGURATION_BUILD_DIR[sdk=macosx*]" = "/Users/anamus/Projects/UnrealEngine/BuildingEscape/Binaries/Mac";
 				"SDKROOT[sdk=macosx]" = macosx;
 				INFOPLIST_OUTPUT_FORMAT = xml;
 				COMBINE_HIDPI_IMAGES = YES;
-				"CONFIGURATION_BUILD_DIR[sdk=iphoneos*]" = "/Users/anamus/Projects/cpp/UnrealCourse/03_BuildingEscape/BuildingEscape/Binaries/IOS/Payload";
-				"INFOPLIST_FILE[sdk=macosx*]" = "/Users/anamus/Projects/cpp/UnrealCourse/03_BuildingEscape/BuildingEscape/Intermediate/Mac/BuildingEscape-Mac-DebugGame-Info.plist";
-				"INFOPLIST_FILE[sdk=iphoneos*]" = "/Users/anamus/Projects/cpp/UnrealCourse/03_BuildingEscape/BuildingEscape/Intermediate/IOS/BuildingEscape-Info.plist";
-				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = "/Users/anamus/Projects/cpp/UnrealCourse/03_BuildingEscape/BuildingEscape/Intermediate/IOS/BuildingEscape.entitlements";
+				"CONFIGURATION_BUILD_DIR[sdk=iphoneos*]" = "/Users/anamus/Projects/UnrealEngine/BuildingEscape/Binaries/IOS/Payload";
+				"INFOPLIST_FILE[sdk=macosx*]" = "/Users/anamus/Projects/UnrealEngine/BuildingEscape/Intermediate/Mac/BuildingEscape-Mac-DebugGame-Info.plist";
+				"INFOPLIST_FILE[sdk=iphoneos*]" = "/Users/anamus/Projects/UnrealEngine/BuildingEscape/Intermediate/IOS/BuildingEscape-Info.plist";
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = "/Users/anamus/Projects/UnrealEngine/BuildingEscape/Intermediate/IOS/BuildingEscape.entitlements";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				SDKROOT = macosx;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -2531,7 +2538,7 @@
 			};
 			name = "DebugGame";
 		};
-		07F21BF3882694E6FAC0B7AF /* "DebugGame Editor" */ = {
+		DF86EE008856AA4C466D8869 /* "DebugGame Editor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64";
@@ -2546,7 +2553,7 @@
 			};
 			name = "DebugGame Editor";
 		};
-		DF86EE008856AA4C466D8869 /* "Development" */ = {
+		40D44E308BD5CBFBE68D96FF /* "Development" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
@@ -2557,14 +2564,14 @@
 				"TARGETED_DEVICE_FAMILY[sdk=iphoneos*]" = "1,2";
 				"SDKROOT[sdk=iphoneos]" = iphoneos;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CONFIGURATION_BUILD_DIR[sdk=macosx*]" = "/Users/anamus/Projects/cpp/UnrealCourse/03_BuildingEscape/BuildingEscape/Binaries/Mac";
+				"CONFIGURATION_BUILD_DIR[sdk=macosx*]" = "/Users/anamus/Projects/UnrealEngine/BuildingEscape/Binaries/Mac";
 				"SDKROOT[sdk=macosx]" = macosx;
 				INFOPLIST_OUTPUT_FORMAT = xml;
 				COMBINE_HIDPI_IMAGES = YES;
-				"CONFIGURATION_BUILD_DIR[sdk=iphoneos*]" = "/Users/anamus/Projects/cpp/UnrealCourse/03_BuildingEscape/BuildingEscape/Binaries/IOS/Payload";
-				"INFOPLIST_FILE[sdk=macosx*]" = "/Users/anamus/Projects/cpp/UnrealCourse/03_BuildingEscape/BuildingEscape/Intermediate/Mac/BuildingEscape-Info.plist";
-				"INFOPLIST_FILE[sdk=iphoneos*]" = "/Users/anamus/Projects/cpp/UnrealCourse/03_BuildingEscape/BuildingEscape/Intermediate/IOS/BuildingEscape-Info.plist";
-				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = "/Users/anamus/Projects/cpp/UnrealCourse/03_BuildingEscape/BuildingEscape/Intermediate/IOS/BuildingEscape.entitlements";
+				"CONFIGURATION_BUILD_DIR[sdk=iphoneos*]" = "/Users/anamus/Projects/UnrealEngine/BuildingEscape/Binaries/IOS/Payload";
+				"INFOPLIST_FILE[sdk=macosx*]" = "/Users/anamus/Projects/UnrealEngine/BuildingEscape/Intermediate/Mac/BuildingEscape-Info.plist";
+				"INFOPLIST_FILE[sdk=iphoneos*]" = "/Users/anamus/Projects/UnrealEngine/BuildingEscape/Intermediate/IOS/BuildingEscape-Info.plist";
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = "/Users/anamus/Projects/UnrealEngine/BuildingEscape/Intermediate/IOS/BuildingEscape.entitlements";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				SDKROOT = macosx;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -2572,7 +2579,7 @@
 			};
 			name = "Development";
 		};
-		40D44E308BD5CBFBE68D96FF /* "Development Editor" */ = {
+		9150CD26DC63724CB2D7D7DF /* "Development Editor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64";
@@ -2587,7 +2594,7 @@
 			};
 			name = "Development Editor";
 		};
-		9150CD26DC63724CB2D7D7DF /* "Shipping" */ = {
+		8709686EA06D030E41A3C941 /* "Shipping" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
@@ -2598,14 +2605,14 @@
 				"TARGETED_DEVICE_FAMILY[sdk=iphoneos*]" = "1,2";
 				"SDKROOT[sdk=iphoneos]" = iphoneos;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CONFIGURATION_BUILD_DIR[sdk=macosx*]" = "/Users/anamus/Projects/cpp/UnrealCourse/03_BuildingEscape/BuildingEscape/Binaries/Mac";
+				"CONFIGURATION_BUILD_DIR[sdk=macosx*]" = "/Users/anamus/Projects/UnrealEngine/BuildingEscape/Binaries/Mac";
 				"SDKROOT[sdk=macosx]" = macosx;
 				INFOPLIST_OUTPUT_FORMAT = xml;
 				COMBINE_HIDPI_IMAGES = YES;
-				"CONFIGURATION_BUILD_DIR[sdk=iphoneos*]" = "/Users/anamus/Projects/cpp/UnrealCourse/03_BuildingEscape/BuildingEscape/Binaries/IOS/Payload";
-				"INFOPLIST_FILE[sdk=macosx*]" = "/Users/anamus/Projects/cpp/UnrealCourse/03_BuildingEscape/BuildingEscape/Intermediate/Mac/BuildingEscape-Mac-Shipping-Info.plist";
-				"INFOPLIST_FILE[sdk=iphoneos*]" = "/Users/anamus/Projects/cpp/UnrealCourse/03_BuildingEscape/BuildingEscape/Intermediate/IOS/BuildingEscape-Info.plist";
-				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = "/Users/anamus/Projects/cpp/UnrealCourse/03_BuildingEscape/BuildingEscape/Intermediate/IOS/BuildingEscape.entitlements";
+				"CONFIGURATION_BUILD_DIR[sdk=iphoneos*]" = "/Users/anamus/Projects/UnrealEngine/BuildingEscape/Binaries/IOS/Payload";
+				"INFOPLIST_FILE[sdk=macosx*]" = "/Users/anamus/Projects/UnrealEngine/BuildingEscape/Intermediate/Mac/BuildingEscape-Mac-Shipping-Info.plist";
+				"INFOPLIST_FILE[sdk=iphoneos*]" = "/Users/anamus/Projects/UnrealEngine/BuildingEscape/Intermediate/IOS/BuildingEscape-Info.plist";
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = "/Users/anamus/Projects/UnrealEngine/BuildingEscape/Intermediate/IOS/BuildingEscape.entitlements";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				SDKROOT = macosx;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -2613,7 +2620,7 @@
 			};
 			name = "Shipping";
 		};
-		431F22565929FB31295390EC /* "DebugGame" */ = {
+		0E44FD8F3EC74B1A4EBBACAE /* "DebugGame" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
@@ -2623,7 +2630,7 @@
 			};
 			name = "DebugGame";
 		};
-		0E44FD8F3EC74B1A4EBBACAE /* "DebugGame Editor" */ = {
+		7047A9979BC383F86AE4A061 /* "DebugGame Editor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64";
@@ -2633,7 +2640,7 @@
 			};
 			name = "DebugGame Editor";
 		};
-		7047A9979BC383F86AE4A061 /* "Development" */ = {
+		D046FC83B32D17EFDAF32276 /* "Development" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
@@ -2643,7 +2650,7 @@
 			};
 			name = "Development";
 		};
-		D046FC83B32D17EFDAF32276 /* "Development Editor" */ = {
+		49EFEAC67F20CA9822820E2A /* "Development Editor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64";
@@ -2653,7 +2660,7 @@
 			};
 			name = "Development Editor";
 		};
-		49EFEAC67F20CA9822820E2A /* "Shipping" */ = {
+		27092877EFE937E2A42A7598 /* "Shipping" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
@@ -2663,7 +2670,7 @@
 			};
 			name = "Shipping";
 		};
-		C69E0FE10C0AD0E6EA29D166 /* "DebugGame" */ = {
+		6A1FB64C3C6325F32C16DA19 /* "DebugGame" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
@@ -2674,14 +2681,14 @@
 				"TARGETED_DEVICE_FAMILY[sdk=iphoneos*]" = "1,2";
 				"SDKROOT[sdk=iphoneos]" = iphoneos;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CONFIGURATION_BUILD_DIR[sdk=macosx*]" = "/Users/anamus/Projects/cpp/UnrealCourse/03_BuildingEscape/BuildingEscape/Binaries/Mac";
+				"CONFIGURATION_BUILD_DIR[sdk=macosx*]" = "/Users/anamus/Projects/UnrealEngine/BuildingEscape/Binaries/Mac";
 				"SDKROOT[sdk=macosx]" = macosx;
 				INFOPLIST_OUTPUT_FORMAT = xml;
 				COMBINE_HIDPI_IMAGES = YES;
-				"CONFIGURATION_BUILD_DIR[sdk=iphoneos*]" = "/Users/anamus/Projects/cpp/UnrealCourse/03_BuildingEscape/BuildingEscape/Binaries/IOS/Payload";
-				"INFOPLIST_FILE[sdk=macosx*]" = "/Users/anamus/Projects/cpp/UnrealCourse/03_BuildingEscape/BuildingEscape/Intermediate/Mac/BuildingEscape-Mac-DebugGame-Info.plist";
-				"INFOPLIST_FILE[sdk=iphoneos*]" = "/Users/anamus/Projects/cpp/UnrealCourse/03_BuildingEscape/BuildingEscape/Intermediate/IOS/BuildingEscape-Info.plist";
-				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = "/Users/anamus/Projects/cpp/UnrealCourse/03_BuildingEscape/BuildingEscape/Intermediate/IOS/BuildingEscape.entitlements";
+				"CONFIGURATION_BUILD_DIR[sdk=iphoneos*]" = "/Users/anamus/Projects/UnrealEngine/BuildingEscape/Binaries/IOS/Payload";
+				"INFOPLIST_FILE[sdk=macosx*]" = "/Users/anamus/Projects/UnrealEngine/BuildingEscape/Intermediate/Mac/BuildingEscape-Mac-DebugGame-Info.plist";
+				"INFOPLIST_FILE[sdk=iphoneos*]" = "/Users/anamus/Projects/UnrealEngine/BuildingEscape/Intermediate/IOS/BuildingEscape-Info.plist";
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = "/Users/anamus/Projects/UnrealEngine/BuildingEscape/Intermediate/IOS/BuildingEscape.entitlements";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				SDKROOT = macosx;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -2689,7 +2696,7 @@
 			};
 			name = "DebugGame";
 		};
-		6A1FB64C3C6325F32C16DA19 /* "DebugGame Editor" */ = {
+		6A8885644FC2B95B51806DB6 /* "DebugGame Editor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64";
@@ -2704,7 +2711,7 @@
 			};
 			name = "DebugGame Editor";
 		};
-		6A8885644FC2B95B51806DB6 /* "Development" */ = {
+		58AC8CDC101F0D753538237A /* "Development" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
@@ -2715,14 +2722,14 @@
 				"TARGETED_DEVICE_FAMILY[sdk=iphoneos*]" = "1,2";
 				"SDKROOT[sdk=iphoneos]" = iphoneos;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CONFIGURATION_BUILD_DIR[sdk=macosx*]" = "/Users/anamus/Projects/cpp/UnrealCourse/03_BuildingEscape/BuildingEscape/Binaries/Mac";
+				"CONFIGURATION_BUILD_DIR[sdk=macosx*]" = "/Users/anamus/Projects/UnrealEngine/BuildingEscape/Binaries/Mac";
 				"SDKROOT[sdk=macosx]" = macosx;
 				INFOPLIST_OUTPUT_FORMAT = xml;
 				COMBINE_HIDPI_IMAGES = YES;
-				"CONFIGURATION_BUILD_DIR[sdk=iphoneos*]" = "/Users/anamus/Projects/cpp/UnrealCourse/03_BuildingEscape/BuildingEscape/Binaries/IOS/Payload";
-				"INFOPLIST_FILE[sdk=macosx*]" = "/Users/anamus/Projects/cpp/UnrealCourse/03_BuildingEscape/BuildingEscape/Intermediate/Mac/BuildingEscape-Info.plist";
-				"INFOPLIST_FILE[sdk=iphoneos*]" = "/Users/anamus/Projects/cpp/UnrealCourse/03_BuildingEscape/BuildingEscape/Intermediate/IOS/BuildingEscape-Info.plist";
-				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = "/Users/anamus/Projects/cpp/UnrealCourse/03_BuildingEscape/BuildingEscape/Intermediate/IOS/BuildingEscape.entitlements";
+				"CONFIGURATION_BUILD_DIR[sdk=iphoneos*]" = "/Users/anamus/Projects/UnrealEngine/BuildingEscape/Binaries/IOS/Payload";
+				"INFOPLIST_FILE[sdk=macosx*]" = "/Users/anamus/Projects/UnrealEngine/BuildingEscape/Intermediate/Mac/BuildingEscape-Info.plist";
+				"INFOPLIST_FILE[sdk=iphoneos*]" = "/Users/anamus/Projects/UnrealEngine/BuildingEscape/Intermediate/IOS/BuildingEscape-Info.plist";
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = "/Users/anamus/Projects/UnrealEngine/BuildingEscape/Intermediate/IOS/BuildingEscape.entitlements";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				SDKROOT = macosx;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -2730,7 +2737,7 @@
 			};
 			name = "Development";
 		};
-		58AC8CDC101F0D753538237A /* "Development Editor" */ = {
+		5D9B3B68233BE8EDA7664AC0 /* "Development Editor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64";
@@ -2745,7 +2752,7 @@
 			};
 			name = "Development Editor";
 		};
-		5D9B3B68233BE8EDA7664AC0 /* "Shipping" */ = {
+		86F8D14BBB71786C6776E01A /* "Shipping" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
@@ -2756,14 +2763,14 @@
 				"TARGETED_DEVICE_FAMILY[sdk=iphoneos*]" = "1,2";
 				"SDKROOT[sdk=iphoneos]" = iphoneos;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CONFIGURATION_BUILD_DIR[sdk=macosx*]" = "/Users/anamus/Projects/cpp/UnrealCourse/03_BuildingEscape/BuildingEscape/Binaries/Mac";
+				"CONFIGURATION_BUILD_DIR[sdk=macosx*]" = "/Users/anamus/Projects/UnrealEngine/BuildingEscape/Binaries/Mac";
 				"SDKROOT[sdk=macosx]" = macosx;
 				INFOPLIST_OUTPUT_FORMAT = xml;
 				COMBINE_HIDPI_IMAGES = YES;
-				"CONFIGURATION_BUILD_DIR[sdk=iphoneos*]" = "/Users/anamus/Projects/cpp/UnrealCourse/03_BuildingEscape/BuildingEscape/Binaries/IOS/Payload";
-				"INFOPLIST_FILE[sdk=macosx*]" = "/Users/anamus/Projects/cpp/UnrealCourse/03_BuildingEscape/BuildingEscape/Intermediate/Mac/BuildingEscape-Mac-Shipping-Info.plist";
-				"INFOPLIST_FILE[sdk=iphoneos*]" = "/Users/anamus/Projects/cpp/UnrealCourse/03_BuildingEscape/BuildingEscape/Intermediate/IOS/BuildingEscape-Info.plist";
-				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = "/Users/anamus/Projects/cpp/UnrealCourse/03_BuildingEscape/BuildingEscape/Intermediate/IOS/BuildingEscape.entitlements";
+				"CONFIGURATION_BUILD_DIR[sdk=iphoneos*]" = "/Users/anamus/Projects/UnrealEngine/BuildingEscape/Binaries/IOS/Payload";
+				"INFOPLIST_FILE[sdk=macosx*]" = "/Users/anamus/Projects/UnrealEngine/BuildingEscape/Intermediate/Mac/BuildingEscape-Mac-Shipping-Info.plist";
+				"INFOPLIST_FILE[sdk=iphoneos*]" = "/Users/anamus/Projects/UnrealEngine/BuildingEscape/Intermediate/IOS/BuildingEscape-Info.plist";
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = "/Users/anamus/Projects/UnrealEngine/BuildingEscape/Intermediate/IOS/BuildingEscape.entitlements";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				SDKROOT = macosx;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -2774,55 +2781,55 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F854792ACF3D560F4EA14531 /* Build configuration list for PBXProject "BuildingEscape" */ = {
+		3B7509B5182949751D8358BE /* Build configuration list for PBXProject "BuildingEscape" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3B7509B5182949751D8358BE /* "DebugGame" */,
-				AAABBEDC7ADD162CC7D371F8 /* "DebugGame Editor" */,
-				EEDC5DC394EA6CE9F40ECD36 /* "Development" */,
-				74246BD66C8ED38153F4524C /* "Development Editor" */,
-				7489CF7CB472CFE78E6B0525 /* "Shipping" */,
+				AAABBEDC7ADD162CC7D371F8 /* "DebugGame" */,
+				EEDC5DC394EA6CE9F40ECD36 /* "DebugGame Editor" */,
+				74246BD66C8ED38153F4524C /* "Development" */,
+				7489CF7CB472CFE78E6B0525 /* "Development Editor" */,
+				51E699D2C6D7C79DB1F033C5 /* "Shipping" */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
 		};
-		FF9FD5B079AE913EFBE4E273 /* Build configuration list for PBXLegacyTarget "BuildingEscape_Build" */ = {
+		F854792ACF3D560F4EA14531 /* Build configuration list for PBXLegacyTarget "BuildingEscape_Build" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				431F22565929FB31295390EC /* "DebugGame" */,
-				0E44FD8F3EC74B1A4EBBACAE /* "DebugGame Editor" */,
-				7047A9979BC383F86AE4A061 /* "Development" */,
-				D046FC83B32D17EFDAF32276 /* "Development Editor" */,
-				49EFEAC67F20CA9822820E2A /* "Shipping" */,
+				0E44FD8F3EC74B1A4EBBACAE /* "DebugGame" */,
+				7047A9979BC383F86AE4A061 /* "DebugGame Editor" */,
+				D046FC83B32D17EFDAF32276 /* "Development" */,
+				49EFEAC67F20CA9822820E2A /* "Development Editor" */,
+				27092877EFE937E2A42A7598 /* "Shipping" */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
 		};
-		D3BE7732D67756CCD25C0AFD /* Build configuration list for PBXNativeTarget "BuildingEscape" */ = {
+		66C2B69A0EF33AAECE280A5A /* Build configuration list for PBXNativeTarget "BuildingEscape" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				398BAD7E4E1D260A990EAD35 /* "DebugGame" */,
-				07F21BF3882694E6FAC0B7AF /* "DebugGame Editor" */,
-				DF86EE008856AA4C466D8869 /* "Development" */,
-				40D44E308BD5CBFBE68D96FF /* "Development Editor" */,
-				9150CD26DC63724CB2D7D7DF /* "Shipping" */,
+				07F21BF3882694E6FAC0B7AF /* "DebugGame" */,
+				DF86EE008856AA4C466D8869 /* "DebugGame Editor" */,
+				40D44E308BD5CBFBE68D96FF /* "Development" */,
+				9150CD26DC63724CB2D7D7DF /* "Development Editor" */,
+				8709686EA06D030E41A3C941 /* "Shipping" */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
 		};
-		6A484D7842E36CB748486777 /* Build configuration list for PBXNativeTarget "BuildingEscape_Index" */ = {
+		D21103CB62D053270A557FED /* Build configuration list for PBXNativeTarget "BuildingEscape_Index" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C69E0FE10C0AD0E6EA29D166 /* "DebugGame" */,
-				6A1FB64C3C6325F32C16DA19 /* "DebugGame Editor" */,
-				6A8885644FC2B95B51806DB6 /* "Development" */,
-				58AC8CDC101F0D753538237A /* "Development Editor" */,
-				5D9B3B68233BE8EDA7664AC0 /* "Shipping" */,
+				6A1FB64C3C6325F32C16DA19 /* "DebugGame" */,
+				6A8885644FC2B95B51806DB6 /* "DebugGame Editor" */,
+				58AC8CDC101F0D753538237A /* "Development" */,
+				5D9B3B68233BE8EDA7664AC0 /* "Development Editor" */,
+				86F8D14BBB71786C6776E01A /* "Shipping" */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = AE3FD147C9388D81E0433DF8 /* Project object */;
+	rootObject = 6A42E70BF157290DFAA0E7B0 /* Project object */;
 }

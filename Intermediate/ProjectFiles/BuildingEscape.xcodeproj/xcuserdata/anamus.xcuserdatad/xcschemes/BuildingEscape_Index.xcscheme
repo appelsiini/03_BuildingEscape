@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "287B78B7F621E25C6B7C913B"
+               BlueprintIdentifier = "6019FC17772B2A14AE8336F5"
                BuildableName = "BuildingEscape_Index"
                BlueprintName = "BuildingEscape_Index"
                ReferencedContainer = "container:BuildingEscape.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "287B78B7F621E25C6B7C913B"
+            BlueprintIdentifier = "6019FC17772B2A14AE8336F5"
             BuildableName = "BuildingEscape_Index"
             BlueprintName = "BuildingEscape_Index"
             ReferencedContainer = "container:BuildingEscape.xcodeproj">
@@ -63,7 +63,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "287B78B7F621E25C6B7C913B"
+            BlueprintIdentifier = "6019FC17772B2A14AE8336F5"
             BuildableName = "BuildingEscape_Index"
             BlueprintName = "BuildingEscape_Index"
             ReferencedContainer = "container:BuildingEscape.xcodeproj">

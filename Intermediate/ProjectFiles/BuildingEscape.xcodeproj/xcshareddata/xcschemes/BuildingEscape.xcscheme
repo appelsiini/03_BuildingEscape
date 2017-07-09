@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A70058321586847C9B8D06A4"
+               BlueprintIdentifier = "DF53A3671784F04BF55B7688"
                BuildableName = "BuildingEscape.app"
                BlueprintName = "BuildingEscape"
                ReferencedContainer = "container:BuildingEscape.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A70058321586847C9B8D06A4"
+               BlueprintIdentifier = "DF53A3671784F04BF55B7688"
                BuildableName = "BuildingEscape.app"
                BlueprintName = "BuildingEscape"
                ReferencedContainer = "container:BuildingEscape.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A70058321586847C9B8D06A4"
+               BlueprintIdentifier = "DF53A3671784F04BF55B7688"
                BuildableName = "BuildingEscape.app"
                BlueprintName = "BuildingEscape"
                ReferencedContainer = "container:BuildingEscape.xcodeproj">
@@ -63,7 +63,7 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "&quot;/Users/anamus/Projects/cpp/UnrealCourse/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject&quot;"
+            argument = "&quot;/Users/anamus/Projects/UnrealEngine/BuildingEscape/BuildingEscape.uproject&quot;"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
@@ -84,7 +84,7 @@
          runnableDebuggingMode = "0">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A70058321586847C9B8D06A4"
+               BlueprintIdentifier = "DF53A3671784F04BF55B7688"
                BuildableName = "BuildingEscape.app"
                BlueprintName = "BuildingEscape"
                ReferencedContainer = "container:BuildingEscape.xcodeproj">
