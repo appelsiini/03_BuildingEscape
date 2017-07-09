@@ -1,3 +1,0 @@
-/Users/anamus/Projects/UnrealEngine/BuildingEscape/Source/BuildingEscape/BuildingEscape.Build.cs
-/Users/anamus/Projects/UnrealEngine/BuildingEscape/Source/BuildingEscape.Target.cs
-/Users/anamus/Projects/UnrealEngine/BuildingEscape/Source/BuildingEscapeEditor.Target.cs
