@@ -21,6 +21,7 @@ public:
 
     // Customs
     void OpenDoor();
+    void CloseDoor();
 
 protected:
 	// Called when the game starts
@@ -28,10 +29,18 @@ protected:
 
 private:
     UPROPERTY(VisibleAnywhere)
-    float OpenAngle = 90.0f;
+    float OpenAngle = 0.f;
+    
+    float ClosedAngle = 90.f;
     
     UPROPERTY(EditAnywhere)
     ATriggerVolume* PressurePlate;
+
+    UPROPERTY(EditAnywhere)
+    float DoorAutoCloseDelay = 0.5f;
     
+    float DoorLastOpened = 0.f;
+
+    AActor* Owner;
     AActor* ActorThatOpens;
 };
