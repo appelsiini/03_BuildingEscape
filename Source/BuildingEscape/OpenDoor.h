@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "BuildingEscape.h"
 #include "Engine.h"
 #include "Components/ActorComponent.h"
 #include "OpenDoor.generated.h"

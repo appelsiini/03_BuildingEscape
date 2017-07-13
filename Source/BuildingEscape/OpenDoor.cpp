@@ -1,5 +1,6 @@
 // Copyright anamus
 
+#include "BuildingEscape.h"
 #include "OpenDoor.h"
 #include "Gameframework/Actor.h"
 

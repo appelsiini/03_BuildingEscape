@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "BuildingEscape.h"
 #include "Engine.h"
 #include "Components/ActorComponent.h"
 #include "PositionReport.generated.h"
@@ -15,7 +16,7 @@ class BUILDINGESCAPE_API UPositionReport : public UActorComponent
 public:	
 	// Sets default values for this component's properties
 	UPositionReport();
-
+    
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;

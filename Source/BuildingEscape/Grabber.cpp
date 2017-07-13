@@ -1,7 +1,10 @@
 // Copyright anamus
 
+#include "BuildingEscape.h"
 #include "Grabber.h"
+#include "DrawDebugHelpers.h"
 
+#define OUT
 
 // Sets default values for this component's properties
 UGrabber::UGrabber()
@@ -29,6 +32,31 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	// ...
+    
+    // Get the player's viewpoints details
+    FVector PlayerViewPointLocation;
+    FRotator PlayerViewPointRotation;
+    
+    GetWorld()->GetFirstPlayerController()->GetPlayerViewPoint(
+        OUT PlayerViewPointLocation,
+        OUT PlayerViewPointRotation
+    );
+    
+    // Log them out
+//    UE_LOG(LogTemp, Warning, TEXT("ViewPointLocation: %s && ViewPointRotation: %s"),
+//           *PlayerViewPointLocation.ToString(), *PlayerViewPointRotation.ToString());
+    
+    // Draw a red line into world to visualise reach
+    FVector LineTraceEnd = PlayerViewPointLocation + FVector(0.f, 0.f, Reach);
+    
+    DrawDebugLine(
+                  GetWorld(),
+                  PlayerViewPointLocation,
+                  LineTraceEnd,
+                  FColor(255, 0, 0),
+                  false,
+                  0.f,
+                  0.f,
+                  10.f
+                  );
 }
-
