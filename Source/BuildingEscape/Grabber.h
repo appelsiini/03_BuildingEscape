@@ -25,5 +25,6 @@ private:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
+    // Reach of the crabber
 	float Reach = 100.f;
 };
