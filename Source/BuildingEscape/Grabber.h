@@ -27,4 +27,7 @@ private:
 
     // Reach of the crabber
 	float Reach = 100.f;
+    
+    UPhysicsHandleComponent *PhysicsHandle = nullptr;
+    UInputComponent *DefaultInputComponent = nullptr;
 };

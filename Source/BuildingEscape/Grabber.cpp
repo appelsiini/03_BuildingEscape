@@ -22,8 +22,30 @@ void UGrabber::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// ...
-	
+	/// Check if there's a PhysicsHandle attached into the owner of this component
+    PhysicsHandle = GetOwner()->FindComponentByClass<UPhysicsHandleComponent>();
+	if (PhysicsHandle)
+    {
+        // Attached PhysicsHandle found
+    }
+    else
+    {
+        UE_LOG(LogTemp, Error, TEXT("Error in %s! Crabber won't work without a properly attached PhysicsHandle component, none found."),
+               *GetOwner()->GetName());
+    }
+    
+    /// Check to make sure there's an input component available
+    DefaultInputComponent = GetOwner()->FindComponentByClass<UInputComponent>();
+    if (DefaultInputComponent)
+    {
+        // Input component found & successfully attached + assigned to private variable
+    }
+    else
+    {
+        UE_LOG(LogTemp, Error, TEXT("Error in %s! Crabber won't work without a properly attached InputComponent, none found."),
+               *GetOwner()->GetName());
+    }
+
 }
 
 
