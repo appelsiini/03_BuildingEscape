@@ -62,16 +62,27 @@ void UGrabber::Grab()
     UE_LOG(LogTemp, Warning, TEXT("Grab pressed."));
     
     /// Line-trace and see if we reach any actors with physics body collision channel set
-    GetFirstPhysicsBodyInReach();
+    auto HitResult = GetFirstPhysicsBodyInReach();
+    auto ComponentToCrab = HitResult.GetComponent();
+    auto ActorHit = HitResult.GetActor();
     
     /// If we hit something, then attach physics handle
-    // TODO: Attach physics handle
+    if (ActorHit)
+    {
+        // Attach physics handle
+        PhysicsHandle->GrabComponent(
+                                     ComponentToCrab,
+                                     NAME_None,
+                                     ComponentToCrab->GetOwner()->GetActorLocation(), // Attach handle to base point, where x & y axis cross in the mesh
+                                     true // Allow rotation
+        );
+    }
 }
 
 void UGrabber::Release()
 {
     UE_LOG(LogTemp, Warning, TEXT("Grab released."));
-    // TODO: Detach physics handle
+    PhysicsHandle->ReleaseComponent();
 }
 
 // Called every frame
@@ -79,8 +90,26 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
+    // Get the player's viewpoints details
+    FVector PlayerViewPointLocation;
+    FRotator PlayerViewPointRotation;
+    
+    GetWorld()->GetFirstPlayerController()->GetPlayerViewPoint(
+                                                               OUT PlayerViewPointLocation,
+                                                               OUT PlayerViewPointRotation
+                                                               );
+    
+    
+    // Draw a red line into world to visualise reach
+    FVector LineTraceEnd = PlayerViewPointLocation + PlayerViewPointRotation.Vector() * Reach;
+    
     // If the physics handle is attached
-        // Move the object that the actor is holding
+    if (PhysicsHandle->GrabbedComponent)
+    {
+        // Move the object that the actor is holding, set new location vector to line-trace's location vector
+        PhysicsHandle->SetTargetLocation(LineTraceEnd);
+    }
+    
 
 }
 
