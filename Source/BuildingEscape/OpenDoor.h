@@ -36,6 +36,9 @@ private:
     
     UPROPERTY(EditAnywhere)
     ATriggerVolume* PressurePlate;
+    
+    // Threshold mass in kilograms that trigger the door opening method
+    float PressurePlateMassThreshold = 50.f;
 
     UPROPERTY(EditAnywhere)
     float DoorAutoCloseDelay = 0.5f;
@@ -43,5 +46,7 @@ private:
     float DoorLastOpened = 0.f;
 
     AActor* Owner;
-    AActor* ActorThatOpens;
+    
+    // Get total mass in kilograms
+    float GetTotalMassOfActorsOnPlate();
 };
