@@ -70,6 +70,7 @@ void UGrabber::Grab()
     {
         // Attach physics handle
         // TODO: Upgrade to non-deprecated Grab method
+        if (!PhysicsHandle) { return; }
         PhysicsHandle->GrabComponent(
                                      ComponentToCrab,
                                      NAME_None, // Not targeting bones in this case, therefor none
@@ -81,6 +82,7 @@ void UGrabber::Grab()
 
 void UGrabber::Release()
 {
+    if (!PhysicsHandle) { return; }
     PhysicsHandle->ReleaseComponent();
 }
 
@@ -90,6 +92,7 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
     
     // If the physics handle is attached
+    if (!PhysicsHandle) { return; }
     if (PhysicsHandle->GrabbedComponent)
     {
         // Move the object that the actor is holding, set new location vector to line-trace's location vector

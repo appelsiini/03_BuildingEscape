@@ -35,7 +35,7 @@ private:
     float ClosedAngle = 90.f;
     
     UPROPERTY(EditAnywhere)
-    ATriggerVolume* PressurePlate;
+    ATriggerVolume* PressurePlate = nullptr;
     
     // Threshold mass in kilograms that trigger the door opening method
     float PressurePlateMassThreshold = 50.f;
@@ -45,7 +45,7 @@ private:
     
     float DoorLastOpened = 0.f;
 
-    AActor* Owner;
+    AActor* Owner = nullptr;
     
     // Get total mass in kilograms
     float GetTotalMassOfActorsOnPlate();
