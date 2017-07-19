@@ -28,20 +28,6 @@ void UOpenDoor::BeginPlay()
     }
 }
 
-void UOpenDoor::OpenDoor()
-{
-    if (!Owner) { return; }
-//    Owner->SetActorRotation(FRotator(0.f, OpenAngle, 0.f));
-    OnOpenRequest.Broadcast();
-}
-
-void UOpenDoor::CloseDoor()
-{
-    if (!Owner) { return; }
-//    Owner->SetActorRotation(FRotator(0.f, ClosedAngle, 0.f));
-    OnCloseRequest.Broadcast();
-}
-
 // Called every frame
 void UOpenDoor::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
@@ -50,14 +36,11 @@ void UOpenDoor::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
     // Check if ActorThatOpens is overlapping with the PressurePlate, and open the door if true 
     if(GetTotalMassOfActorsOnPlate() > PressurePlateMassThreshold)
     {
-        OpenDoor();
-        DoorLastOpened = GetWorld()->GetTimeSeconds();
+        OnOpenRequest.Broadcast();
     }
-    
-    // Autoclose door after set threshold
-    if (GetWorld()->GetTimeSeconds() > DoorLastOpened + DoorAutoCloseDelay)
+    else
     {
-        CloseDoor();
+        OnCloseRequest.Broadcast();
     }
 }
 

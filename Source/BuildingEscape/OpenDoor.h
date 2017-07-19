@@ -21,11 +21,7 @@ public:
     
     // Called every frame
     virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
-
-    // Customs
-    void OpenDoor();
-    void CloseDoor();
-
+    
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
@@ -40,12 +36,8 @@ private:
     ATriggerVolume* PressurePlate = nullptr;
     
     // Threshold mass in kilograms that trigger the door opening method
-    float PressurePlateMassThreshold = 50.f;
-
     UPROPERTY(EditAnywhere)
-    float DoorAutoCloseDelay = 0.5f;
-    
-    float DoorLastOpened = 0.f;
+    float PressurePlateMassThreshold = 50.f;
 
     AActor* Owner = nullptr;
     
